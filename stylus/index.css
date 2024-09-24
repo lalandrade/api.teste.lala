@@ -1,0 +1,332 @@
+/*
+TOP = CIMA 
+LEFT =  ESQUERDA
+RIGHT =  DIREITA
+BOTTOM = BAIXO
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --cor-branco: #e6e8e3;
+    --cor-branco-tom-1: #d9d9d9;
+    --cor-pastel: #d7dacf; 
+    --cor-pastel-tom-1: #bec3bc;
+    --cor-marrom: #9d9d9d;
+    --cor-marrom-tom-1: #808080;
+    --cor-marrom-tom-2: #626262;
+    --cor-cinza-azul: #8f9a9c;
+    --cor-cinza-azul-tom-1: #65727a;
+    --cor-preto: #262523;
+    --cor-preto-tom-1: #0D0D0D;
+    --cor-verde: #95BF3B;
+}
+
+/* Reseta as configurações básicas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+}
+
+.boxOp1 {
+    display: flex;
+    align-items: center;
+    color: var(--cor-verde);
+}
+
+/* Botão Header */
+.button {
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer; 
+}
+
+.button a {
+    color: var(--cor-branco);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--cor-preto);
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 var(--cor-preto-tom-1);
+    border-radius: 5px;
+    display: inline-block; 
+}
+
+.button a:active {
+    top: 10px;
+    background-color: var(--cor-preto);
+    box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 var(--cor-preto-tom-1);
+}
+
+.button:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
+    left: -4px;
+}
+
+/* Logo */
+.logo {
+    width: 70px;
+    height: 60px;
+}
+
+/* Imagens Centradas */
+.imagem-center {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-preto);
+    padding: 50px 0;
+}
+
+.container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    color: var(--cor-branco);
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--cor-branco);
+    padding-left: 10px;
+}
+
+.footer-col .medias-socias {
+    margin-top: 30px;
+}
+
+.footer-col .medias-socias a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: var(--cor-branco);
+    border: 1px solid var(--cor-branco);
+    transition: all 0.5s ease;
+}
+
+.footer-col .medias-socias a i {
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover {
+    color: var(--cor-cinza-azul-tom-1);
+    background-color: var(--cor-branco);
+}
+
+.footer-col .form-sub input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid var(--cor-branco);
+    color: var(--cor-branco);
+    background-color: var(--cor-cinza-azul-tom-1);
+}
+
+.footer-col .form-sub input::placeholder {
+    color: var(--cor-branco);
+}
+
+.footer-col .form-sub button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: var(--cor-preto-tom-1);
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: var(--cor-branco);        
+}
+
+/* Imagens de Redes Sociais */
+.foto-facebook,
+.foto-instagram,
+.foto-twitter,
+.foto-linkedin {
+    margin-top: 8px;
+    width: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/* Elementos da API */
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos dos Produtos */
+.eletronicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.product-box {
+    background-color: var(--cor-branco);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.product-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+.product-details {
+    display: none;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.product-details h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-details p {
+    color: #666;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsividade dos Produtos */
+/* Responsividade dos Botões */
+@media (max-width: 600px) {
+    .button a {
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+        padding: 15px 30px; /* Ajusta o padding */
+    }
+}
+
+/* Responsividade Geral */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column; /* Muda a direção do header em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .button {
+        margin: 10px 0; /* Adiciona espaçamento entre os botões */
+    }
+
+    .logo {
+        width: 50px; /* Ajusta o tamanho da logo */
+        height: auto; /* Mantém a proporção da logo */
+    }
+}
+
+/* Estilos dos Produtos */
+@media (max-width: 768px) {
+    .eletronicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-box {
+        width: 90%;
+    }
+}

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root 
+{
+    --cor-branco: #e6e8e3;
+    --cor-branco-tom-1 :#d9d9d9;
+    --cor-pastel: #d7dacf; 
+    --cor-pastel-tom-1: #bec3bc;
+    --cor-marrom :#9d9d9d;
+    --cor-marrom-tom-1 :#808080;
+    --cor-marrom-tom-2 :#626262;
+    --cor-pastel-tom-1 :#bbbbbb;
+    --cor-cinza-azul :#8f9a9c;
+    --cor-cinza-azul-tom-1 :#65727a;
+    --cor-preto :#262523;
+    --cor-preto-tom-1:#0D0D0D;
+    --cor-verde: #95BF3B;
+    --cor-verde-tom-1 :#008000;
+}
+
+/* Reseta as configurações básicas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    text-align:center;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-branco-tom-1);
+}
+
+ /* TODO header */
+header {
+    margin-top : 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centraliza os itens em linha reta */
+    text-align: center;
+}
+
+.boxOp1 {
+    display: flex;
+    align-items: center;
+    color: var(--cor-verde);
+}
+
+
+
+/*! imagens  */
+
+.logo {
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+
+/* FORM = formulario */
+
+.card {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: var(--cor-branco);
+    margin: 10px;
+  }
+  
+  .card-header {
+    background-color: var(--cor-verde);
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .card-header .text-header {
+    margin: 0;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .card-body {
+    padding: 16px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color:var(--cor-verde-tom-1);
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    margin-left: 13px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color:var(--cor-verde);
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    float: none;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    background-color: #ccc;
+    color: #333;
+  }
+
+.centralizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.btn01 {
+    padding: 10px 30px;
+    margin-left: 13px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color:var(--cor-verde);
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration:none;
+    float: none;
+    display: inline-block;
+} 
+.btn01:hover {
+    background-color: #ccc;
+    color: #333;
+  }
+
+.separar{
+    display: flex;
+    justify-content: center;
+}
+
+.separar01{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
